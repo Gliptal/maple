@@ -1,0 +1,64 @@
+@import "gui"
+
+global-reset()
+
+*
+    box-sizing      : inherit
+    text-size-adjust: 100%
+    text-rendering  : optimizeLegibility
+    font-smoothing  : grayscale
+    cursor          : default
+    user-select     : none
+    &:before
+    &:after
+        box-sizing: inherit
+
+::-webkit-scrollbar
+    width           : 12px
+    background-color: color_main-dark
+
+::-webkit-scrollbar-thumb
+    background-color: color_accent-light
+
+html
+    height     : 100%
+    min-height : 100%
+    font       : 0px "Open Sans", sans-serif
+    font-weight: font_weight-text
+    box-sizing : border-box
+
+body
+    height    : 100%
+    min-height: 100%
+    margin-top: 144px
+    color     : color_font-light
+    overflow-y: scroll
+
+a
+    color          : inherit
+    text-decoration: initial
+    cursor         : pointer
+    transition     : color time_fast
+
+strong
+    font-weight: bold
+    color      : color_accent-light
+
+press
+    display         : inline-block
+    height          : 48px
+    width           : 156px
+    line-height     : @height
+    font-size       : font_size-normal
+    font-weight     : font_weight-interact
+    text-align      : center
+    text-transform  : uppercase
+    background-color: color_accent-dark
+    cursor          : pointer
+    transition      : background-color time_fast
+    &:hover
+    &.selected
+        background-color: color_accent-light
+
+
+

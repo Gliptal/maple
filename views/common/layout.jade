@@ -1,0 +1,14 @@
+doctype html
+html
+  head
+    include /views/common/head.jade
+    include /views/common/imports/css.jade
+    block css
+    include /views/common/imports/js.jade
+    block js
+  body
+    include /views/common/background.jade
+    include /views/common/header.jade
+    #content
+      block content
+    include /views/common/footer.jade

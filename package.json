@@ -1,0 +1,29 @@
+{
+  "name": "dcsw",
+  "version": "0.1.0",
+  "description": "DCSW checklist app",
+  "main": "server.js",
+  "dependencies": {
+    "app-root-path": "^1.0.0",
+    "body-parser": "^1.13.2",
+    "cookie-parser": "^1.3.5",
+    "debug": "^2.2.0",
+    "express": "^4.13.3",
+    "jade": "^1.11.0",
+    "morgan": "^1.6.1",
+    "mysql": "^2.9.0",
+    "nib": "^1.1.0",
+    "object-merge": "^2.5.1",
+    "serve-favicon": "^2.3.0",
+    "socket.io": "^1.3.7",
+    "stylus": "^0.52.4"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "SET DEBUG=maple:* & nodemon bin/primer.js",
+    "start": "SET DEBUG= & nodemon bin/primer.js"
+  },
+  "author": "Mattia Affabris <affa@outlook.it> (https://github.com/Gliptal/)",
+  "license": "ISC",
+  "private": true
+}

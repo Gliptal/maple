@@ -1,0 +1,8 @@
+# npm dependency directory
+node_modules
+
+# npm debug
+npm-debug.log
+
+# processed css files
+public/style/**

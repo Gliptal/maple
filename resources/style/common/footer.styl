@@ -1,0 +1,29 @@
+@import "gui"
+
+#footer
+    position        : relative
+    z-index         : 1
+    height          : 96px
+    width           : 100%
+    background-color: color_accent-dark
+
+#footer_content
+    height     : 60px
+    line-height: @height
+    margin-left: 20%
+    font-size  : font_size-small
+
+.footer_meta
+    margin   : 12px
+    font-size: font_size-small
+    color    : color_font-medium
+
+#footer_update
+    absolute: bottom left
+
+#footer_credit
+    absolute: bottom right
+    & a
+        color : color_font-light
+        &:hover
+            color: color_font-medium

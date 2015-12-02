@@ -1,0 +1,14 @@
+extends /views/common/layout.jade
+
+block css
+  link(rel="stylesheet", href="/style/home.css")
+
+block content
+  #home_dcs.home_row
+    a(href="http://www.digitalcombatsimulator.com/?lang=en" target="_blank")
+      p!= dcs
+  #home_maple.home_row
+    a(href="mailto:mapleflagmissions@gmail.com")
+      p!= maple
+  #home_video.home_row
+    iframe(id="player" type="text/html" width="720" height="396" src="https://www.youtube.com/embed?listType=playlist&list=PLOS_9ARrkqWdPkRenGLEMMTb497_pUZpr&vq=hd720&autohide=1&controls=1&fs=1&modestbranding=1" frameborder=0 allowfullscreen)
