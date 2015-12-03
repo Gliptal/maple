@@ -1,6 +1,3 @@
-VERSIONS
-======
-
 Versioning follows [Semantic versioning](http://semver.org/) rules.
 
 ### 0.1.0
@@ -9,3 +6,10 @@ Versioning follows [Semantic versioning](http://semver.org/) rules.
 - created header
 - created footer
 - created home
+
+### 0.2.0
+
+- refactoring
+- sticky header
+- modified home
+- created faq

@@ -1,7 +1,7 @@
 @import "gui"
 
 #header
-    fixed           : top left
+    absolute        : top left
     z-index         : 1
     height          : 144px
     width           : 100%
@@ -17,6 +17,10 @@
     text-transform: uppercase
     background    : url("../../images/leaf.png") no-repeat top left/89px 96px
 
-#header_sections
-    height    : 48px
-    text-align: center
+#header_tabs
+    height          : 48px
+    width           : 100%
+    text-align      : center
+    background-color: inherit
+    &.sticked
+        fixed: top left

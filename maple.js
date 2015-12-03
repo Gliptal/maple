@@ -5,6 +5,7 @@ var stylus = require("stylus")
 var config = require(rootDir + "bin/config")
 
 var home = require(rootDir + "routes/home")
+var faq = require(rootDir + "routes/faq")
 
 // -----------------------------------------
 
@@ -34,6 +35,7 @@ var configurator =
     configureRoutes: function()
         {
         this.site.use("/", home)
+        this.site.use("/", faq)
         }
     }
 

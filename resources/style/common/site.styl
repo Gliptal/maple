@@ -23,7 +23,7 @@ global-reset()
 html
     height     : 100%
     min-height : 100%
-    font       : 0px "Open Sans", sans-serif
+    font       : 0 "Open Sans", sans-serif
     font-weight: font_weight-text
     box-sizing : border-box
 
@@ -39,6 +39,13 @@ a
     text-decoration: initial
     cursor         : pointer
     transition     : color time_fast
+    & *
+        cursor: pointer
+
+p a
+    text-decoration: underline
+    &:hover
+        color: color_font-medium
 
 strong
     font-weight: bold
@@ -59,6 +66,10 @@ press
     &:hover
     &.selected
         background-color: color_accent-light
+    & a
+        display: block
+        height : 100%
+        width  : 100%
 
 
 

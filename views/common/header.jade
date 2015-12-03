@@ -1,6 +1,5 @@
 #header
-  #header_title= company
-  #header_sections
+  h1#header_title= company
+  #header_tabs
     each section in sections
-      a(href="/#{section}")
-        press= section
+      press(id="header_tabs-#{section}"): a(href="/#{section}")= section

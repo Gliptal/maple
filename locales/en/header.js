@@ -1,6 +1,6 @@
 var header =
     {
-    "company" : "maple flag",
+    "company"  : "maple flag",
     "sections" :
         [
         "home",
