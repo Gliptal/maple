@@ -1,20 +1,18 @@
 @import "common\gui"
 
-.faq_row
+.faq_entry
+    margin : 0 10%
     padding: 36px 0
-    &:nth-child(even)
-        background-color: color_main-light
+    &:not(:last-child)
+        border-bottom: 1px solid color_main-light
     & p
-        width       : 75%
-        line-height : 24px
-        margin      : 0 auto
-        font-size   : font_size-normal
-        text-align  : justify
-
-#faq_index
-    & p
-        width: 50%
+        line-height: 24px
+        font-size  : font_size-normal
+        text-align : justify
 
 .faq_question
-    padding-bottom: 12px
-    color         : color_font-medium
+    color : font_color-medium
+    cursor: pointer
+
+.faq_answer
+    padding-top: 12px

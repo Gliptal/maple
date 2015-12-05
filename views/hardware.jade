@@ -1,0 +1,12 @@
+extends /views/common/layout.jade
+
+block css
+  link(rel="stylesheet", href="/style/hardware.css")
+
+block content
+  each entry, index in hardware
+    row(id="hardware_row-#{index}")
+      p.hidden!= entry
+
+block script
+  script(type="text/javascript" src="/javascripts/hardware.js")

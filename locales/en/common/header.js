@@ -7,9 +7,10 @@ var header =
         "missions",
         "faq",
         "support",
-        "blog",
+        "hardware",
         "store",
-        "about"
+        "about",
+        "blog"
         ]
     }
 

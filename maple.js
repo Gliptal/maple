@@ -6,6 +6,8 @@ var config = require(rootDir + "bin/config")
 
 var home = require(rootDir + "routes/home")
 var faq = require(rootDir + "routes/faq")
+var hardware = require(rootDir + "routes/hardware")
+var about = require(rootDir + "routes/about")
 
 // -----------------------------------------
 
@@ -36,6 +38,8 @@ var configurator =
         {
         this.site.use("/", home)
         this.site.use("/", faq)
+        this.site.use("/", hardware)
+        this.site.use("/", about)
         }
     }
 

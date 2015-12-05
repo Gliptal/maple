@@ -1,31 +1,20 @@
 @import "common\gui"
 
-.home_row
-    &:nth-child(even)
-        background-color: color_main-light
-    & p
-        width       : 60%
-        line-height : 24px
-        margin      : 0 auto
-        padding     : 60px
-        padding-left: 252px
-        font-size   : font_size-normal
-        text-align  : justify
-    & iframe
-        display: block
-        margin : 0 auto
-
-
 #home_row-video
     padding: 60px
-    @media (min-width: 0)
-        & iframe
+    & iframe
+    & div
+        @media (min-width: 0)
             height: 480px
             width : 853px
-    @media (min-width: 1440px)
-        & iframe
+        @media (min-width: 1440px)
             height: 720px
             width : 1280px
+
+#player
+    display   : block
+    margin    : 0 auto
+    transition: opacity time_slow
 
 #home_row-maple p
     background: url("../../images/maple.png") no-repeat center left 48px/156px

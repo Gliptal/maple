@@ -1,8 +1,8 @@
 {
-  "name": "dcsw",
-  "version": "0.1.0",
-  "description": "DCSW checklist app",
-  "main": "server.js",
+  "name": "maple",
+  "version": "0.3.0",
+  "description": "New design for the Maple Flag website",
+  "main": "maple.js",
   "dependencies": {
     "app-root-path": "^1.0.0",
     "body-parser": "^1.13.2",

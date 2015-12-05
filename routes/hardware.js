@@ -5,18 +5,18 @@ var config = require(rootDir + "bin/config")
 var meta = require(rootDir + "locales/" + config.lang + "/common/meta")
 var header = require(rootDir + "locales/" + config.lang + "/common/header")
 var footer = require(rootDir + "locales/" + config.lang + "/common/footer")
-var home = require(rootDir + "locales/" + config.lang + "/home")
-var content = merge(meta, header, footer, home)
+var hardware = require(rootDir + "locales/" + config.lang + "/hardware")
+var content = merge(meta, header, footer, hardware)
 
 // -----------------------------------------
 
 var router = express.Router()
 
-router.get("/home", function(req, res, next)
+router.get("/hardware", function(req, res, next)
     {
-    config.debug.routing("GET request -> /home")
+    config.debug.routing("GET request -> /hardware")
 
-    res.render("home", content)
+    res.render("hardware", content)
     })
 
 // -----------------------------------------

@@ -4,13 +4,10 @@ block css
   link(rel="stylesheet", href="/style/faq.css")
 
 block content
-  #faq_index.faq_row
-    each pair, index in faq
-      p: a(href="#faq_#{index}")= pair.question
-  each pair, index in faq
-    .faq_row
-      p.faq_question(id="faq_#{index}")!= pair.question
-      p.faq_answer!= pair.answer
+  each entry in faq
+    .faq_entry
+      p.faq_question!= entry.question
+      p.faq_answer.removed!= entry.answer
 
 block script
   script(type="text/javascript" src="/javascripts/faq.js")

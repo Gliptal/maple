@@ -13,3 +13,13 @@ Versioning follows [Semantic versioning](http://semver.org/) rules.
 - sticky header
 - modified home
 - created faq
+
+### 0.3.0
+
+- refactoring
+- transitions
+- sticky footer
+- modified home
+- modified faq
+- created hardware
+- created about

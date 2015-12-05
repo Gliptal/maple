@@ -3,13 +3,16 @@ extends /views/common/layout.jade
 block css
   link(rel="stylesheet", href="/style/home.css")
 
+block js
+  script(type="text/javascript" src="//www.youtube.com/iframe_api")
+
 block content
-  #home_row-video.home_row
-    iframe(id="player" type="text/html" width="1280" height="720" src="https://www.youtube.com/embed?listType=playlist&list=PLOS_9ARrkqWdPkRenGLEMMTb497_pUZpr&vq=hd720&autohide=1&controls=1&fs=1&modestbranding=1" frameborder=0 allowfullscreen)
-  #home_row-maple.home_row
-    p!= home.maple
-  #home_row-dcs.home_row
-    p!= home.dcs
+  row#home_row-video
+    #player.hidden
+  row#home_row-maple
+    p.hidden!= home.maple
+  row#home_row-dcs
+    p.hidden!= home.dcs
 
 block script
   script(type="text/javascript" src="/javascripts/home.js")

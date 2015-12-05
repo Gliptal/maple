@@ -1,0 +1,12 @@
+extends /views/common/layout.jade
+
+block css
+  link(rel="stylesheet", href="/style/about.css")
+
+block content
+  each entry in about
+    row
+      p!= entry
+
+block script
+  script(type="text/javascript" src="/javascripts/about.js")
