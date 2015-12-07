@@ -1,0 +1,117 @@
+USE OF THE SOFTWARE IS SUBJECT TO THE LICENCE TERMS SET FORTH BELOW. THIS LICENCE AGREEMENT ("LICENCE") IS A LEGAL DOCUMENT BETWEEN YOU ("LICENSEE" OR "YOU") AND MAPLEFLAGMISSIONS.CA ("MFM") IN CONJUNCTION WITH THE FIGHTER COLLECTION LIMITED OF C/O IMPERIAL WAR MUSEUM, DUXFORD AIRFIELD, CAMBRIDGE, CB2 4QR, ENGLAND ("TFC" OR "WE") FOR THE "MAPLEFLAGMISSIONS.CA" SOFTWARE PRODUCT ("PROGRAM"), WHICH INCLUDES ALL SOFTWARE INCLUDED WITH THIS LICENCE, THE ASSOCIATED MEDIA, THE DATA SUPPLIED WITH IT, ANY PRINTED MATERIALS, AND ANY ONLINE OR ELECTRONIC DOCUMENTATION ("DOCUMENTATION") AND ANY AND ALL COPIES AND DERIVATIVE WORKS OF SUCH SOFTWARE AND MATERIALS AND ARE THE COPYRIGHTED WORK.
+
+IF YOU DO NOT AGREE TO THE TERMS OF THIS LICENCE, WE ARE UNWILLING TO LICENCE THE PROGRAM TO YOU AND YOU MUST NOT INSTALL THE PROGRAM. IN THIS CASE, IF YOU OBTAINED THE PROGRAM FROM A RETAILER YOU MUST RETURN THE MEDIUM ON WHICH THE PROGRAM IS STORED AND ALL ACCOMPANYING DOCUMENTATION TO THE RETAILER FROM WHOM YOU PURCHASED THEM, TOGETHER WITH PROOF OF PAYMENT.
+
+1. LIMITED USE LICENCE
+
+In consideration of you agreeing to abide by the terms of this Licence, MFM AND TFC hereby grants to you a non-exclusive, non-transferable, limited right and licence to install and use one copy of the Program and the Documentation solely and exclusively for your personal use on the terms of this Licence. All rights not specifically granted under this Licence are reserved by MFM and TFC and, as applicable, MFM and TFC's licensors. You may not network the Program or otherwise install it or use it on more than one computer at a time, except if expressly authorized otherwise in the Documentation. . GOVERNMENT AND COMMERCIAL ENTITIES MAY NOT USE THIS SOFTWARE UNDER THIS EULA. Government and commercial entities wishing to use this software in conjunction with training or demonstrator applications must obtain a license directly from MFM and TFC under a separate pricing structure and terms of use.
+
+2. OWNERSHIP
+
+2.1 The Program is licensed, not sold, for your use. This Licence confers no title or ownership in the Program and should not be construed as a sale of any rights in the Program. This Licence shall also apply to any patches or updates you may obtain from MFM and TFC for the Program.
+
+2.2 All title, ownership rights and intellectual property rights in and to the Program and any and all copies thereof (including but not limited to any titles, computer code, themes, objects, characters, character names, stories, narrative, locations, artwork, animations, sounds, musical compositions, audiovisual effects, methods of operation, any related documentation, and add-ons incorporated into the Program now or in the future) are owned by MFM and TFC, affiliates of TFC or TFC's licensors.
+
+2.3 You acknowledge that you have no right to have access to the Program in source code form or in unlocked coding or with comments.
+
+2.4 All rights are reserved. This Program contains certain licensed materials and MFM and TFC's licensors may protect their rights in the event of any violation of this Agreement.
+
+3. LICENCE CONDITIONS
+
+3.1 Except as expressly set out in this Licence or in clauses 4.1 and 4.2 below, or as permitted by any local law, you undertake to use the Program for your own personal use, and you shall not:
+
+(a) use the Program, or permit use of the Program, on more than one computer, computer terminal, or workstation at the same time;
+
+(b) make copies of the Program or any part thereof, or make copies of the materials accompanying this Program except where such copying is incidental to normal use of the Program or where it is necessary for the purpose of back-up or security;
+
+(c) use the Program, or permit use of the Program, in a network, multi-user arrangement or remote access arrangement, including any online use, except as otherwise explicitly provided by the Program;
+
+(d) sell, rent, lease, sub-license, distribute, loan, translate, merge, adapt, vary, modify or otherwise transfer the Program, or any copies of the Program, without the express prior written consent of MFM and TFC;
+
+(e) not to make alterations to, or modifications of, the whole or any part of the Program nor permit the Program or any part of it to be combined with, or become incorporated in, any other programs;
+
+(f) not to disassemble, decompile, reverse engineer or create derivative works based on the whole, or any part, of the Program nor attempt to do any such things except to the extent that (by virtue of section 296A of the Copyright, Designs and Patents Act 1988) such actions cannot be prohibited because they are essential for the purpose of achieving inter-operability of the Program with another software program, and provided that the information obtained by you during such activities:
+
+(i) is used only for the purpose of achieving inter-operability of the Program with another software program; and
+
+(ii) is not unnecessarily disclosed or communicated to any third party without the MFM and TFC's prior written consent; and
+
+(iii) is not used to create any software which is substantially similar to the Program.
+
+(g) remove any proprietary notices or labels from the Program or otherwise modify the Program without the prior written consent of the MFM and TFC; and
+
+(h) exploit this Program or any of its parts commercially, including but not limited to use at a cyber cafe, computer gaming centre or any other location-based site. MFM and TFC may offer a separate Site Licence Agreement to permit you to make the Program available for commercial use; please refer to the contact information below.
+
+3.2 You acknowledge that the Program has not been developed to meet your individual requirements and that it is therefore your responsibility to ensure that the facilities and functions of the Program as described in the Documentation meet your requirements.
+
+3.3 You acknowledge that the Program may not be free of errors or bugs and you agree that the existence of any minor errors shall not constitute a breach of this Licence.
+
+4. PROGRAM UTILITIES
+
+4.1 This Program may contain certain design, programming and processing utilities, tools, assets and other resources ("Program Utilities") for use with this Program that allow you to create customized new missions, campaigns, skins, terrain and other related materials for personal use in connection with the Program ("New Game Materials"). The use of any Program Utilities is subject to the following additional licence restrictions:
+
+(a) you agree that, as a condition to your using the Program Utilities, you will not use or allow third parties to use the Program Utilities and the New Game Materials created by you for any commercial purposes, including but not limited to selling, renting, leasing, licensing, distributing, or otherwise transferring the ownership of such New Game Materials, whether on a stand alone basis or packaged in combination with the New Game Materials created by others, through any and all distribution channels, including, without limitation, retail sales and on-line electronic distribution. You agree not to solicit, initiate or encourage any proposal or offer from any person or entity to create any New Game Materials for commercial distribution. You agree to promptly inform MFM and TFC in writing of any instances of your receipt of any such proposal or offer;
+
+(b) if you decide to make available the use of the New Game Materials created by you to other gamers, you agree to do so solely without charge, unless with prior approval from MFM and TFC;
+
+(c) New Game Materials may be created only if such New Game Materials can be used exclusively in combination with the retail version of the Program. New Game Materials may not be designed to be used as a stand-alone product;
+
+(d) New Game Materials must not contain any illegal, obscene or defamatory materials, materials that infringe rights of privacy and publicity of third parties or (without appropriate irrevocable licences granted specifically for that purpose) any trademarks, copyright-protected works or other properties of third parties;
+
+(e) all New Game Materials must contain prominent identification at least in any on-line description and with reasonable duration on the opening screen: (a) the name and E-mail address of the New Game Materials' creator(s) and (b) the words "THIS MATERIAL IS NOT MADE OR SUPPORTED BY MFM and TFC.";
+
+(f) all New Game Materials created by you shall be exclusively owned by MFM and TFC and/or its licensors as a derivative work (as such term is described under U.S. copyright law) of the Program and MFM and TFC and its licensors may use any New Game Materials made publicly available by you for any purpose whatsoever, including but not limited to, for purpose of advertising and promoting the Program.
+
+4.2 With permission from MFM and TFC, in certain circumstances, you may be authorised to publish and distribute New Game Materials for gain. In this event you should first contact MFM and TFC to seek permission, and obtain the details of the terms and conditions at MapleFlagMissions.ca and TFC Imperial War Museum, Duxford Airfield, Cambridge, CB2 4QR, England, UK. Attn. Business and Legal Affairs
+
+4.3 Weapons Range Mod created by Nick Landolfi and provided by the 476th Virtual Fighter Group used with permission and without compensation. http://www.476vfightergroup.com/content.php
+
+5. WARRANTY
+
+The entire risk arising out of use or performance of the Program remains with you. However it is warranted that the media containing the Program shall be free from defects in material and workmanship under normal use and services and the Program will perform substantially in accordance with the accompanying written materials, for a period of 90 (ninety) days from the date of your purchase of the Program.
+
+6. LIMITATION OF LIABILITY
+
+6.1 SUBJECT TO CLAUSE 6.2, NEITHER MFM AND TFC, ITS PARENT, SUBSIDIARIES, AFFILIATES OR LICENSORS SHALL BE LIABLE IN ANY WAY FOR LOSS OR DAMAGE OF ANY KIND RESULTING FROM THE USE OF THE PROGRAM, INCLUDING BUT NOT LIMITED TO LOSS OF GOODWILL, LOSS OF INCOME, LOSS OF BUSINESS PROFITS OR CONTRACTS, BUSINESS INTERRUPTION, LOSS OF THE USE OF MONEY OR ANTICIPATED SAVINGS, LOSS OF INFORMATION, LOSS OF OPPORTUNITY, LOSS OF, DAMAGE TO OR CORRUPTION OF DATA, WORK STOPPAGE, COMPUTER FAILURE OR MALFUNCTION, OR OTHER COMMERCIAL DAMAGE OR LOSSES OR ANY INDIRECT OR CONSEQUENTIAL LOSS OR DAMAGE OF ANY KIND HOWSOEVER ARISING WHETHER CAUSED BY TORT (INCLUDING NEGLIGENCE), BREACH OF CONTRACT OR OTHERWISE. EVEN IF MFM AND TFC HAS BEEN ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. MFM AND TFC'S LIABILITY UNDER OR IN CONNECTION WITH THIS LICENCE, OR ANY COLLATERAL CONTRACT, WHETHER IN CONTRACT, TORT (INCLUDING NEGLIGENCE) OR OTHERWISE, SHALL NOT EXCEED THE ACTUAL PRICE PAID FOR THE LICENCE TO USE THE PROGRAM.
+
+6.2 Nothing in this Licence shall exclude or in any way limit the Licensor's liability for fraud, or for death and personal injury caused by its negligence, or any other liability to the extent the same may not be excluded or limited as a matter of law.
+
+6.3 Subject to clauses 6.1 and 6.2, MFM and TFC's liability for infringement of third party intellectual property rights shall be limited to breaches of rights subsisting in the United Kingdom and Canada.
+
+6.4 THIS LICENCE SETS OUT THE FULL EXTENT OF MFM AND TFC'S OBLIGATIONS AND LIABILITIES IN RESPECT OF THE SUPPLY OF THE PROGRAM AND DOCUMENTATION. IN PARTICULAR, THERE ARE NO CONDITIONS, WARRANTIES, REPRESENTATIONS OR OTHER TERMS, EXPRESS OR IMPLIED, THAT ARE BINDING ON MFM AND TFC EXCEPT AS SPECIFICALLY STATED IN THIS LICENCE. ANY CONDITION, WARRANTY, REPRESENTATION OR OTHER TERM CONCERNING THE SUPPLY OF THE PROGRAM AND DOCUMENTATION WHICH MIGHT OTHERWISE BE IMPLIED INTO OR INCORPORATED IN THIS LICENCE, OR ANY COLLATERAL CONTRACT, WHETHER BY STATUTE, COMMON LAW OR OTHERWISE, IS HEREBY EXCLUDED TO THE FULLEST EXTENT PERMITTED BY LAW.
+
+7. INDEMNITY
+
+You agree to indemnify, defend and hold TFC, its partners, affiliates, licensors, contractors, officers, directors, employees and agents harmless from all damages, losses and expenses arising directly or indirectly from your acts and omissions to act in using the Program pursuant to the terms of this Agreement.
+
+8. TERMINATION
+
+8.1 You may terminate the Licence at any time by destroying the Program and any New Material.
+
+8.2 TFC may, at its discretion, terminate this Licence in the event that you fail to comply with the terms and conditions contained herein. In such event, you must immediately destroy the Program and any New Material.
+
+8.3 Upon termination of this Licence for whatever reason:
+
+(a) all rights granted hereunder shall automatically cease;
+
+(b) you forthwith must cease all activity authorised by this Licence; and
+
+(c) you must immediately delete or remove the Program from all computer equipment in your possession and immediately destroy or return to the MFM and TFC (at MFM and TFC's) option all copies of the Program then in your possession, custody or control and, in the case of destruction, certify to MFM and TFC that you have done so.
+
+9. LICENCE TRANSFER
+
+9.1 You may permanently transfer all of your rights under this Licence to the recipient, provided that the recipient agrees to the terms of this Licence and you remove the Program from your computer. 9.2 MFM and TFC may transfer, assign, charge, sub-contract or otherwise dispose of this Licence, or any of our rights or obligations arising under it, at any time during the term of this Licence.
+
+10. MISCELLANEOUS
+
+10.1 The Licensor will not be liable or responsible for any failure to perform, or delay in performance of, any of his obligations under this Licence that is caused by an event outside its reasonable control.
+
+10.2 This Licence and any document expressly referred to in it represents the entire agreement between MFM and TFC and you to the licensing of the Program and Documentation and supersedes any prior agreement, understanding or arrangement between us, whether oral or in writing.
+
+10.3 This Licence shall be deemed to have been made and executed in England, and any dispute arising out of or in connection with it or its subject matter shall be governed by and construed in accordance with English law. The parties hereby agree that the English courts shall have exclusive jurisdiction to settle any dispute or claim that arises out of or in connection with this Licence or its subject matter.
+
+10.4 All characters appearing in the program are fictitious. Any resemblance to real persons, living or dead, is purely coincidental.
+
+Copyright 2011 MapleFlagMissions.ca. All rights reserved. Copyright 2010 The Fighter Collection Ltd. All rights reserved. Copyright (c) 2002, Xiph.org Foundation Copyright (c) 2002, Industrial Light & Magic, a division of Lucas Digital Ltd. LLC Copyright © 2003-2008 Tecgraf, PUC-Rio. Copyright c 2003 Kepler Project. Copyright c 2003-2006 The Kepler Project. (c) 2007 The FreeType Project Copyright (C) 2001-3 Henry Maddocks
+
+If you have any questions concerning this licence, you may contact MapleFlagMissions.ca at mapleflagmissions@gmail.com and TFC at Imperial War Museum, Duxford Airfield, Cambridge, CB2 4QR, England, UK. Attn. Business and Legal Affairs

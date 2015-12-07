@@ -53,7 +53,7 @@ strong
 press
     display         : inline-block
     height          : 48px
-    width           : 156px
+    width           : 120px
     line-height     : @height
     font-size       : font_size-normal
     font-weight     : font_weight-interact
@@ -65,26 +65,39 @@ press
     &:hover
     &.selected
         background-color: color_accent-light
+    &:not(:last-child)
+        border-right: solid 1px color_accent-light
     & a
         display: block
         height : 100%
         width  : 100%
 
 row
-    display: block
+    display: flex
+    padding: 0 20%
     &:nth-child(even)
         background-color: color_main-light
+    &.row_noimage p
+        width: 100%
+    &.row_numbering div
+        display        : flex
+        justify-content: center
+        align-items    : center
+        font-size      : font_size-image
+        font-weight    : font_weight-title
     & p
-        line-height : 24px
-        margin      : 0 20%
-        padding     : 60px
-        padding-left: 252px
-        font-size   : font_size-normal
-        text-align  : justify
-        transition  : opacity time_slow
-
-.removed
-    display: none
+    & div
+        align-items: stretch
+        transition : opacity time_normal
+    & p
+        width      : calc(100% - 252px)
+        line-height: 24px
+        padding    : 60px 0
+        font-size  : font_size-normal
+        text-align : justify
+    & div
+        align-items: stretch
+        width      : 252px
 
 .hidden
     opacity: 0

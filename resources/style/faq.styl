@@ -11,8 +11,13 @@
         text-align : justify
 
 .faq_question
-    color : font_color-medium
-    cursor: pointer
+    padding-bottom: 12px
+    color         : font_color-medium
+    cursor        : pointer
 
 .faq_answer
-    padding-top: 12px
+    max-height: 150px
+    overflow  : hidden
+    transition: max-height time_fast
+    &.faq_answer-closed
+        max-height : 0

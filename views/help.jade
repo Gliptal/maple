@@ -1,0 +1,15 @@
+extends /views/common/layout.jade
+
+block css
+  link(rel="stylesheet", href="/style/help.css")
+
+block content
+  row#help_row-intro.row_noimage
+    p.hidden!= help.intro
+  each point, index in help.list
+    row.row_numbering
+      .hidden= index+1
+      p.hidden!= point
+
+block script
+  script(type="text/javascript" src="/javascripts/help.js")

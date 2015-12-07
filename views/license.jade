@@ -1,0 +1,15 @@
+extends /views/common/layout.jade
+
+block css
+  link(rel="stylesheet", href="/style/license.css")
+
+block content
+  row#license_row-intro.row_noimage
+    p.hidden!= license.intro
+  each point, index in license.list
+    row.row_numbering
+      .hidden= index+1
+      p.hidden!= point
+
+block script
+  script(type="text/javascript" src="/javascripts/license.js")

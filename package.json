@@ -1,6 +1,6 @@
 {
   "name": "maple",
-  "version": "0.3.0",
+  "version": "0.4.0",
   "description": "New design for the Maple Flag website",
   "main": "maple.js",
   "dependencies": {

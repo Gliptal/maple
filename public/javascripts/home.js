@@ -34,7 +34,7 @@ Home.prototype.__loadVideo = function()
 
   function onPlayerReady(event)
     {
-    $("#player").toggleClass("hidden")
+    $("#player").removeClass("hidden")
     }
   }
 

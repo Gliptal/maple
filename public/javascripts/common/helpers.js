@@ -5,7 +5,7 @@ function fadeParagraphs()
     $("row").each(function()
       {
       if ($(window).scrollTop() + $(window).height() >= $(this).position().top + $(this).height()/2)
-        $(this).children("p").removeClass("hidden")
+        $(this).children("div:not(#player), p").removeClass("hidden")
       })
     })
 
@@ -15,5 +15,5 @@ function fadeParagraphs()
     window.scroll(0, 0)
     }
   else
-    $("row p").removeClass("hidden")
+    $("row p, row div:not(#player)").removeClass("hidden")
   }

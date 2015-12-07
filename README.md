@@ -56,3 +56,13 @@ Versioning follows [semantic versioning](http://semver.org/) rules.
 - modified faq
 - created hardware
 - created about
+
+### 0.4.0
+
+- refactoring
+- modified header
+- modified faq
+- reworked images
+- created help
+- created license
+- created support

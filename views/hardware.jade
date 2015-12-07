@@ -6,6 +6,7 @@ block css
 block content
   each entry, index in hardware
     row(id="hardware_row-#{index}")
+      .hidden
       p.hidden!= entry
 
 block script

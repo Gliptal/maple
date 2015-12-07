@@ -6,6 +6,8 @@ var header =
         "home",
         "missions",
         "faq",
+        "help",
+        "license",
         "support",
         "hardware",
         "store",
