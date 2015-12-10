@@ -10,6 +10,7 @@ var help = require(rootDir + "routes/help")
 var license = require(rootDir + "routes/license")
 var support = require(rootDir + "routes/support")
 var hardware = require(rootDir + "routes/hardware")
+var store = require(rootDir + "routes/store")
 var about = require(rootDir + "routes/about")
 
 // -----------------------------------------
@@ -45,6 +46,7 @@ var configurator =
         this.site.use("/", license)
         this.site.use("/", support)
         this.site.use("/", hardware)
+        this.site.use("/", store)
         this.site.use("/", about)
         }
     }

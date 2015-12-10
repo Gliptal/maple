@@ -6,3 +6,6 @@ npm-debug.log
 
 # processed css files
 public/style/**
+
+# static deliver files
+STATIC

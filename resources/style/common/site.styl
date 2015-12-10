@@ -56,7 +56,7 @@ press
     width           : 120px
     line-height     : @height
     font-size       : font_size-normal
-    font-weight     : font_weight-interact
+    font-weight     : font_weight-medium
     text-align      : center
     text-transform  : uppercase
     background-color: color_accent-dark
@@ -98,6 +98,33 @@ row
     & div
         align-items: stretch
         width      : 252px
+
+group
+    display: block
+    &:last-child
+        padding-bottom: 24px
+    & .group_title
+        height        : 84px
+        width         : 100%
+        line-height   : 48px
+        margin-bottom : 24px
+        border-bottom : 1px solid color_main-light
+        padding-top   : 36px
+        font-size     : font_size-normal
+        font-weight   : font_weight-medium
+        text-transform: uppercase
+        text-align    : center
+        cursor        : pointer
+    & .group_content
+        display       : block
+        max-height    : 960px
+        margin        : 0 10%
+        text-align    : center
+        overflow      : hidden
+        transition    : max-height time_normal, padding time_normal
+        &.group_closed
+            max-height    : 0
+            padding-bottom: 0
 
 .hidden
     opacity: 0

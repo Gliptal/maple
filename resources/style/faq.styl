@@ -2,7 +2,7 @@
 
 .faq_entry
     margin : 0 10%
-    padding: 36px 0
+    padding: 12px 0
     &:not(:last-child)
         border-bottom: 1px solid color_main-light
     & p
@@ -11,13 +11,16 @@
         text-align : justify
 
 .faq_question
-    padding-bottom: 12px
-    color         : font_color-medium
-    cursor        : pointer
+    padding   : 12px 0
+    color     : font_color-medium
+    cursor    : pointer
+    transition: padding time_fast
+    &:hover
+        padding-left: 12px
 
 .faq_answer
     max-height: 150px
     overflow  : hidden
     transition: max-height time_fast
     &.faq_answer-closed
-        max-height : 0
+        max-height: 0

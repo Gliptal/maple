@@ -33,3 +33,10 @@ Versioning follows [Semantic versioning](http://semver.org/) rules.
 - created help
 - created license
 - created support
+
+### 0.5.0
+
+- refactoring
+- modified footer
+- modified faq
+- created store
