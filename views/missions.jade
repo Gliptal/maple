@@ -1,0 +1,49 @@
+extends /views/common/layout.jade
+
+block css
+  link(rel="stylesheet", href="/style/missions.css")
+
+block content
+  each entry in missions
+    group
+      .group_title= entry.aircraft
+      .group_content
+        .group_aircraft(style="background-image: url(\"../../images/missions/#{entry.image}.jpg\")")= entry.description
+        .group_missions
+          if entry.single != undefined
+            each mission in entry.single
+              .group_package(style="background-image: url(\"../../images/missions/#{entry.image}/#{mission.image}\")")
+                press.press-buy
+                  a(href="#{mission.paypal}" target="_blank") #{mission.price}
+                press.press-download
+                  a(href="#{mission.link}" target="_blank")
+                div
+                  strong= mission.name
+                p= mission.description
+                p.group_package-file #{mission.file} (#{mission.size} #{mission.updated})
+        .group_campaigns
+          if entry.campaigns != undefined
+            each campaign in entry.campaigns
+              .group_campaign
+                .group_campaign-description
+                  press.press-buy
+                    a(href="#{campaign.paypal}" target="_blank") #{campaign.price}
+                  div
+                    strong= campaign.name
+                  p= campaign.description
+                each package in campaign.packages
+                  .group_package(style="background-image: url(\"../../images/missions/#{entry.image}/#{package.image}\")")
+                    press.press-download
+                      a(href="#{package.link}" target="_blank")
+                    if package.file2 != undefined
+                      press.press-download
+                        a(href="#{package.link2}" target="_blank")
+                    div
+                      strong= package.name
+                    p= package.description
+                    p.group_package-file #{package.file} (#{package.size} #{package.updated})
+                    if package.file2 != undefined
+                      p.group_package-file #{package.file2} (#{package.size2} #{package.updated2})
+
+block script
+  script(type="text/javascript" src="/javascripts/missions.js")

@@ -65,8 +65,6 @@ press
     &:hover
     &.selected
         background-color: color_accent-light
-    &:not(:last-child)
-        border-right: solid 1px color_accent-light
     & a
         display: block
         height : 100%
@@ -102,7 +100,7 @@ row
 group
     display: block
     &:last-child
-        padding-bottom: 24px
+        padding-bottom: 72px
     & .group_title
         height        : 84px
         width         : 100%
@@ -117,14 +115,12 @@ group
         cursor        : pointer
     & .group_content
         display       : block
-        max-height    : 960px
         margin        : 0 10%
         text-align    : center
         overflow      : hidden
-        transition    : max-height time_normal, padding time_normal
-        &.group_closed
-            max-height    : 0
-            padding-bottom: 0
+        transition    : height time_normal ease-in-out
+        &.no-transition
+            transition: none
 
 .hidden
     opacity: 0

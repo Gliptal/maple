@@ -36,7 +36,13 @@ Versioning follows [Semantic versioning](http://semver.org/) rules.
 
 ### 0.5.0
 
+- delivery script
 - refactoring
 - modified footer
 - modified faq
 - created store
+
+### 0.6.0
+
+- refactoring
+- created missions

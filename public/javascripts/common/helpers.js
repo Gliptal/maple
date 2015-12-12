@@ -17,3 +17,22 @@ function fadeParagraphs()
   else
     $("row p, row div:not(#player)").removeClass("hidden")
   }
+
+function subscribeGroups()
+    {
+    $("group").each(function()
+        {
+        var content = $(this).children(".group_content")
+        var height = content.height()
+
+        content.css("height", height)
+
+        $(this).children(".group_title").click(function()
+            {
+            if (content.css("height") == "0px")
+              content.css("height", height)
+            else
+              content.css("height", "0px")
+            })
+        })
+    }

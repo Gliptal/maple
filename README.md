@@ -25,13 +25,13 @@ The following commands are available once in the project folder:
 STATIC DELIVERY
 ======
 
-The `deliver.js` script creates the required static files directly from the framework, and automatically delivers them in the appropriate folder structure inside `STATIC`. This means that the best method to modify the website is to utilize this provided framework, avoiding the manual edit of the static `.html`, `.css` or `.js` files on your remote server.
+The `deliver.js` script creates the required static files directly from the framework, and automatically delivers them in the appropriate folder structure inside `\STATIC`. This means that the best method to modify the website is to utilize this provided framework, avoiding the manual edit of the static `.html`, `.css` or `.js` files on your remote server.
 
 - Run the local node.js server: `npm test`
 - Make the modifications: the server will be restarted if needed as the code is changed. Note that if the only variations are in the content (not in the structure or design) it should be sufficient to modify the files found in `locales\en` (one per page), provided their current structure is followed.
 - Stop the local node.js server: `CTRL-C` `CTRL-C`
 - Run the delivery script: `npm run deliver`
-- Copy the modified static files in `STATIC` to your remote server
+- Copy the modified static files in `\STATIC` to your remote server
 
 CONTACTS
 ======
@@ -81,7 +81,13 @@ Versioning follows [semantic versioning](http://semver.org/) rules.
 
 ### 0.5.0
 
+- delivery script
 - refactoring
 - modified footer
 - modified faq
 - created store
+
+### 0.6.0
+
+- refactoring
+- created missions

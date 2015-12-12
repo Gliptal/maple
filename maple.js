@@ -5,6 +5,7 @@ var stylus = require("stylus")
 var config = require(rootDir + "bin/config")
 
 var home = require(rootDir + "routes/home")
+var missions = require(rootDir + "routes/missions")
 var faq = require(rootDir + "routes/faq")
 var help = require(rootDir + "routes/help")
 var license = require(rootDir + "routes/license")
@@ -41,6 +42,7 @@ var configurator =
     configureRoutes: function()
         {
         this.site.use("/", home)
+        this.site.use("/", missions)
         this.site.use("/", faq)
         this.site.use("/", help)
         this.site.use("/", license)
