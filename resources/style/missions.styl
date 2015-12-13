@@ -1,5 +1,47 @@
 @import "common\gui"
 
+sidebar
+    position        : absolute
+    top             : 144px
+    left            : 0
+    height          : 100%
+    width           : 15%
+    background-color: color_main-light
+    overflow-y      : overlay
+    &.sticked
+        position: fixed
+        top     : 48px
+
+.sidebar_section
+    &:not(:last-child)
+        border-bottom: 1px solid color_main-dark
+    & div
+    & press
+        width: 100%
+        &.selected
+            background-color: color_accent-dark
+            &:hover
+                background-color: color_accent-light
+
+.sidebar_section-type
+    height        : 36px
+    line-height   : @height
+    font-size     : font_size-normal
+    font-weight   : font_weight-medium
+    text-transform: uppercase
+    text-align    : center
+
+.sidebar_section-aircraft
+    height          : 24px
+    line-height     : @height
+    font-size       : font_size-small
+    font-weight     : font_weight-light
+    background-color: inherit
+
+group
+    width      : 85%
+    margin-left: 15%
+
 .group_content
     & div
     & p
@@ -8,15 +50,22 @@
     & > div
         margin: 36px 0
 
-.press-download
-    width              : 48px
-    background-image   : url("../../images/icons/download.png")
-    background-position: center
+.press_buy
+.press_download
     background-size    : 30px
     background-repeat  : no-repeat
 
+.press_buy
+    padding-left       : 48px
+    background-image   : url("../../images/icons/buy.png")
+    background-position: 9px center
+
+.press_download
+    width              : 48px
+    background-image   : url("../../images/icons/download.png")
+    background-position: center
+
 .group_aircraft
-    height             : 240px
     padding            : 24px
     padding-left       : 411px
     text-align         : justify

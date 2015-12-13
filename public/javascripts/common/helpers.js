@@ -19,20 +19,27 @@ function fadeParagraphs()
   }
 
 function subscribeGroups()
+  {
+  $("group").each(function()
     {
-    $("group").each(function()
-        {
-        var content = $(this).children(".group_content")
-        var height = content.height()
+    var content = $(this).children(".group_content")
+    var height = content.height()
 
+    content.css("height", height)
+
+    $(this).children(".group_title").click(function()
+      {
+      if (content.css("height") == "0px")
         content.css("height", height)
+      else
+        content.css("height", "0px")
 
-        $(this).children(".group_title").click(function()
-            {
-            if (content.css("height") == "0px")
-              content.css("height", height)
-            else
-              content.css("height", "0px")
-            })
-        })
-    }
+      setTimeout(function()
+        {
+        var scroll = $(window).scrollTop()
+        window.scroll(0, scroll+1)
+        window.scroll(0, scroll)
+        }, Options.timeSlow)
+      })
+    })
+  }

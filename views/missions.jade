@@ -4,8 +4,16 @@ block css
   link(rel="stylesheet", href="/style/missions.css")
 
 block content
+  sidebar
+    each section in sidebar
+      .sidebar_section
+        .sidebar_section-type= section.type
+        each aircraft in section.aircrafts
+          press.sidebar_section-aircraft
+            a(href="##{aircraft}")= aircraft
+
   each entry in missions
-    group
+    group(id="#{entry.aircraft}")
       .group_title= entry.aircraft
       .group_content
         .group_aircraft(style="background-image: url(\"../../images/missions/#{entry.image}.jpg\")")= entry.description
@@ -13,9 +21,10 @@ block content
           if entry.single != undefined
             each mission in entry.single
               .group_package(style="background-image: url(\"../../images/missions/#{entry.image}/#{mission.image}\")")
-                press.press-buy
-                  a(href="#{mission.paypal}" target="_blank") #{mission.price}
-                press.press-download
+                if mission.price != null
+                  press.press_buy
+                    a(href="#{mission.paypal}" target="_blank")= mission.price
+                press.press_download
                   a(href="#{mission.link}" target="_blank")
                 div
                   strong= mission.name
@@ -26,17 +35,17 @@ block content
             each campaign in entry.campaigns
               .group_campaign
                 .group_campaign-description
-                  press.press-buy
-                    a(href="#{campaign.paypal}" target="_blank") #{campaign.price}
+                  press.press_buy
+                    a(href="#{campaign.paypal}" target="_blank")= campaign.price
                   div
                     strong= campaign.name
                   p= campaign.description
                 each package in campaign.packages
                   .group_package(style="background-image: url(\"../../images/missions/#{entry.image}/#{package.image}\")")
-                    press.press-download
+                    press.press_download
                       a(href="#{package.link}" target="_blank")
                     if package.file2 != undefined
-                      press.press-download
+                      press.press_download
                         a(href="#{package.link2}" target="_blank")
                     div
                       strong= package.name

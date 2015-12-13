@@ -22,7 +22,7 @@ The following commands are available once in the project folder:
 - Start server (production): `npm start`
 - Create static files: `npm run deliver`
 
-STATIC DELIVERY
+STATIC FILES
 ======
 
 The `deliver.js` script creates the required static files directly from the framework, and automatically delivers them in the appropriate folder structure inside `\STATIC`. This means that the best method to modify the website is to utilize this provided framework, avoiding the manual edit of the static `.html`, `.css` or `.js` files on your remote server.
@@ -32,6 +32,15 @@ The `deliver.js` script creates the required static files directly from the fram
 - Stop the local node.js server: `CTRL-C` `CTRL-C`
 - Run the delivery script: `npm run deliver`
 - Copy the modified static files in `\STATIC` to your remote server
+
+PLUGINS
+======
+
+The following plugins are used:
+
+- [jQuery](https://jquery.com/)
+- [viewport](http://www.appelsiini.net/projects/viewport)
+-
 
 CONTACTS
 ======
@@ -81,8 +90,8 @@ Versioning follows [semantic versioning](http://semver.org/) rules.
 
 ### 0.5.0
 
-- delivery script
 - refactoring
+- deliver.js script
 - modified footer
 - modified faq
 - created store
@@ -91,3 +100,8 @@ Versioning follows [semantic versioning](http://semver.org/) rules.
 
 - refactoring
 - created missions
+
+### 0.7.0
+
+- modified missions
+- added sidebar

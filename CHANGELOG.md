@@ -36,8 +36,8 @@ Versioning follows [Semantic versioning](http://semver.org/) rules.
 
 ### 0.5.0
 
-- delivery script
 - refactoring
+- deliver.js script
 - modified footer
 - modified faq
 - created store
@@ -46,3 +46,8 @@ Versioning follows [Semantic versioning](http://semver.org/) rules.
 
 - refactoring
 - created missions
+
+### 0.7.0
+
+- modified missions
+- added sidebar
