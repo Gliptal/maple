@@ -10,15 +10,15 @@ Versioning follows [Semantic versioning](http://semver.org/) rules.
 ### 0.2.0
 
 - refactoring
-- sticky header
+- added sticky header
 - modified home
 - created faq
 
 ### 0.3.0
 
 - refactoring
-- transitions
-- sticky footer
+- added transitions
+- added sticky footer
 - modified home
 - modified faq
 - created hardware
@@ -37,7 +37,7 @@ Versioning follows [Semantic versioning](http://semver.org/) rules.
 ### 0.5.0
 
 - refactoring
-- deliver.js script
+- created deliver.js script
 - modified footer
 - modified faq
 - created store
@@ -51,3 +51,12 @@ Versioning follows [Semantic versioning](http://semver.org/) rules.
 
 - modified missions
 - added sidebar
+
+### 1.0.0
+
+- code overhaul
+- refactoring
+- working prototype
+- modified deliver.js script
+- modified missions
+- modified sidebar

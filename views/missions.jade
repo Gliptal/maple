@@ -1,58 +1,58 @@
 extends /views/common/layout.jade
 
 block css
-  link(rel="stylesheet", href="/style/missions.css")
+  link(rel="stylesheet" href="/style/missions.css")
+
+block js
+  script(type="text/javascript" src="/javascripts/plugins/smoothscroll.js" defer)
+  script(type="text/javascript" src="/javascripts/plugins/viewport.js" defer)
+  script(type="text/javascript" src="/javascripts/missions.js" defer)
 
 block content
   sidebar
     each section in sidebar
       .sidebar_section
-        .sidebar_section-type= section.type
+        .sidebar_section-title= section.type
         each aircraft in section.aircrafts
-          press.sidebar_section-aircraft
-            a(href="##{aircraft}")= aircraft
+          press(style={"background-image" : "url(\"../../images/icons/#{aircraft.type}.png\")"}): a(href="##{aircraft.name}")= aircraft.name
 
-  each entry in missions
-    group(id="#{entry.aircraft}")
-      .group_title= entry.aircraft
-      .group_content
-        .group_aircraft(style="background-image: url(\"../../images/missions/#{entry.image}.jpg\")")= entry.description
-        .group_missions
-          if entry.single != undefined
-            each mission in entry.single
-              .group_package(style="background-image: url(\"../../images/missions/#{entry.image}/#{mission.image}\")")
-                if mission.price != null
-                  press.press_buy
-                    a(href="#{mission.paypal}" target="_blank")= mission.price
-                press.press_download
-                  a(href="#{mission.link}" target="_blank")
-                div
-                  strong= mission.name
-                p= mission.description
-                p.group_package-file #{mission.file} (#{mission.size} #{mission.updated})
-        .group_campaigns
-          if entry.campaigns != undefined
-            each campaign in entry.campaigns
-              .group_campaign
-                .group_campaign-description
-                  press.press_buy
-                    a(href="#{campaign.paypal}" target="_blank")= campaign.price
-                  div
-                    strong= campaign.name
-                  p= campaign.description
-                each package in campaign.packages
-                  .group_package(style="background-image: url(\"../../images/missions/#{entry.image}/#{package.image}\")")
-                    press.press_download
-                      a(href="#{package.link}" target="_blank")
-                    if package.file2 != undefined
-                      press.press_download
-                        a(href="#{package.link2}" target="_blank")
-                    div
-                      strong= package.name
-                    p= package.description
-                    p.group_package-file #{package.file} (#{package.size} #{package.updated})
-                    if package.file2 != undefined
-                      p.group_package-file #{package.file2} (#{package.size2} #{package.updated2})
+  each entry in content
+    if entry.pending == undefined || entry.pending == false
+      group(id="#{entry.aircraft}")
+        +aircraft(entry)
+    else if entry.pending == true
+      group.group_pending(id="#{entry.aircraft}")
+        +aircraft(entry)
 
-block script
-  script(type="text/javascript" src="/javascripts/missions.js")
+mixin aircraft(aircraft)
+  .group_title(style={"background-image" : "url(\"../../images/missions/#{aircraft.image}.jpg\")"})
+    p= aircraft.aircraft
+  .group_content
+    .group_aircraft(style={"background-image" : "url(\"../../images/missions/#{aircraft.image}.jpg\")"})= aircraft.description
+    if aircraft.single != undefined
+      .group_missions
+        each package in aircraft.single
+          +package(package, aircraft.image)
+    if aircraft.campaigns != undefined
+      .group_campaigns
+        each campaign in aircraft.campaigns
+          .group_campaign
+            .group_campaign-description
+              press.press_buy: a(href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=#{campaign.paypal}" target="_blank")= campaign.price
+              div: strong= campaign.name
+              p= campaign.description
+            each package in campaign.packages
+              +package(package, aircraft.image)
+
+mixin package(package, aircraft)
+  .group_package(style={"background-image" : "url(\"../../images/missions/#{aircraft}/#{package.image}\")"})
+    if package.price != undefined
+      press.press_buy: a(href="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=#{package.paypal}" target="_blank")= package.price
+    press.press_download: a(href="#{package.link}" target="_blank")
+    if package.file2 != undefined
+      press.press_download: a(href="#{package.link2}" target="_blank")
+    div: strong= package.name
+    p= package.description
+    h6 #{package.file} (#{package.size} #{package.updated})
+    if package.file2 != undefined
+      h6 #{package.file2} (#{package.size2} #{package.updated2})

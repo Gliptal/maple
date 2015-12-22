@@ -1,28 +1,23 @@
 @import "gui"
 
 header
-    absolute        : top left
-    z-index         : 1
-    height          : 144px
-    width           : 100%
-    background-color: color_accent-dark
-
-#header_title
-    height        : 96px
-    line-height   : @height
-    margin-left   : 24px
-    padding-left  : 144px
-    font-size     : font_size-large
-    font-weight   : font_weight-heavy
-    text-transform: uppercase
-    background    : url("../../images/common/leaf.png") no-repeat center left/96px
-
-#header_tabs
-    height          : 48px
-    width           : 100%
-    text-align      : center
-    background-color: inherit
-    &.sticked
-        fixed: top left
-    & press:not(:last-child)
-        border-right: solid 1px color_accent-light
+    absolute  : top left
+    z-index   : 1
+    height    : header_height
+    width     : 100%
+    background: radial-gradient(circle at 48px 48px, color_accent-normal, color_accent-dark)
+    & h1
+        height        : 96px
+        line-height   : @height
+        margin-left   : 24px
+        padding-left  : 144px
+        background    : url("../../images/common/leaf.png") no-repeat center left/96px
+    & nav
+        height    : 48px
+        width     : 100%
+        text-align: center
+        background: inherit
+        & press
+            background: none
+        &.sticked
+            fixed: top left

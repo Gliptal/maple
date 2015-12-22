@@ -1,9 +1,9 @@
 header
-  h1#header_title!= company
-  nav#header_tabs
-    each section in sections
-      press(id="header_tabs-#{section}")
-        if section != "blog"
-          a(href="/#{section}")!= section
+  h1= header.title
+  nav
+    each section in header.sections
+      press(id="header_nav-#{section}")
+        if section == "blog"
+          a(href="http://mapleflagmissions.blogspot.ca/" target="_blank")= section
         else
-          a(href="http://mapleflagmissions.blogspot.ca/" target="_blank")!= section
+          a(href="/#{section}")= section

@@ -1,11 +1,7 @@
-# npm dependency directory
+# npm files
 node_modules
-
-# npm debug
 npm-debug.log
 
-# processed css files
-public/style/**
-
-# static deliver files
+# static files
 STATIC
+public/style/**

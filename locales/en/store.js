@@ -1,7 +1,7 @@
 var store =
     {
-    "title" : "Maple Flag STORE",
-    "store" :
+    "page"    : "Maple Flag STORE",
+    "content" :
         {
         "modules"     :
             [
@@ -116,6 +116,6 @@ var store =
         }
     }
 
-// -----------------------------------------
+// // //
 
 module.exports = store

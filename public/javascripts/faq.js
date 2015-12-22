@@ -1,15 +1,15 @@
-var Faq = function(section)
+var Faq = function()
   {
-  this.__subscribeRows()
+  this.__subscribeEntries()
   }
 
-Faq.prototype.__subscribeRows = function()
+Faq.prototype.__subscribeEntries = function()
   {
   $(".faq_question").click(function()
     {
-    $(this).siblings(".faq_answer").toggleClass("faq_answer-closed")
+    $(this).siblings(".faq_answer").toggleClass("closed")
     })
   }
 
-var header = new Header("faq")
-var faq = new Faq()
+new Header("faq", true)
+new Faq()

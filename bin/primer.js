@@ -1,8 +1,8 @@
-var http = require("http")
+var http   = require("http")
 var config = require("./config")
-var maple = require(rootDir + "maple")
+var maple  = require(rootDir + "maple")
 
-// -----------------------------------------
+// // //
 
 var primer =
     {
@@ -31,10 +31,10 @@ function debugState()
         }, 1000*60*minutesStep)
     }
 
-// -----------------------------------------
+// // //
 
 primer.start()
 
-// -----------------------------------------
+// // //
 
 module.exports = primer

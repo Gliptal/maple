@@ -1,1 +1,1 @@
-var header = new Header("about")
+new Header("about", true)

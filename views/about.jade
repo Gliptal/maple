@@ -1,12 +1,12 @@
 extends /views/common/layout.jade
 
 block css
-  link(rel="stylesheet", href="/style/about.css")
+  link(rel="stylesheet" href="/style/about.css")
+
+block js
+  script(type="text/javascript" src="/javascripts/about.js" defer)
 
 block content
-  each entry in about
-    row.row_noimage
-      p!= entry
-
-block script
-  script(type="text/javascript" src="/javascripts/about.js")
+  each entry in content
+    row
+      p.noimage!= entry

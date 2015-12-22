@@ -1,19 +1,21 @@
 extends /views/common/layout.jade
 
 block css
-  link(rel="stylesheet", href="/style/store.css")
+  link(rel="stylesheet" href="/style/store.css")
+
+block js
+  script(type="text/javascript" src="/javascripts/store.js" defer)
 
 block content
   group
-    .group_title= "dcs modules"
-    #store_modules.group_content
-      each module in store.modules
-        a(href=module.link target="_blank" style="background-image: url(\"../../images/store/modules/#{module.image}\")")
+    .group_title
+      p= "dcs modules"
+    .group_content#group_modules
+      each module in content.modules
+        a(href=module.link target="_blank" style={"background-image" : "url(\"../../images/store/modules/#{module.image}\")"})
   group
-    .group_title= "merchandise"
-    #store_merchandise.group_content
-      each merch in store.merchandise
-        a(href=merch.link target="_blank" style="background-image: url(\"../../images/store/merchandise/#{merch.image}\")")
-
-block script
-  script(type="text/javascript" src="/javascripts/store.js")
+    .group_title
+      p= "merchandise"
+    .group_content#group_merchandise
+      each merch in content.merchandise
+        a(href=merch.link target="_blank" style={"background-image" : "url(\"../../images/store/modules/#{merch.image}\")"})

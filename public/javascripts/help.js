@@ -1,7 +1,2 @@
-var Help = function()
-  {
-  fadeParagraphs()
-  }
-
-var header = new Header("help")
-var help = new Help()
+new Header("help", true)
+new Rows()

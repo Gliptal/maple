@@ -1,7 +1,7 @@
 var faq =
     {
-    "title" : "Maple Flag FAQ",
-    "faq"   :
+    "page"    : "Maple Flag FAQ",
+    "content" :
         [
         {
         "question" : "What does MapleFlagMissions.ca do?",
@@ -62,6 +62,6 @@ var faq =
         ]
     }
 
-// -----------------------------------------
+// // //
 
 module.exports = faq

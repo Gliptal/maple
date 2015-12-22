@@ -1,17 +1,30 @@
-var Header = function(section)
+var Header = function(tab, scroll)
   {
   this.__stickOnScroll()
-
-  $("#header_tabs-"+section).addClass("selected")
+  this.__selectTab(tab)
+  if (scroll)
+    this.__scroll()
   }
 
 Header.prototype.__stickOnScroll = function()
   {
   $(window).scroll(function()
     {
-    if ($(this).scrollTop() > 96)
-      $("#header_tabs").addClass("sticked")
+    if ($(this).scrollTop() >= 96)
+      $("header nav").addClass("sticked")
     else
-      $("#header_tabs").removeClass("sticked")
+      $("header nav").removeClass("sticked")
     })
+  }
+
+Header.prototype.__selectTab = function(tab)
+  {
+  $("#header_nav-"+tab).addClass("selected")
+  }
+
+Header.prototype.__scroll = function()
+  {
+  var headerHeight = $("header h1").height()
+
+  $(window).scrollTop(headerHeight)
   }

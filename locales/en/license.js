@@ -1,7 +1,7 @@
 var license =
     {
-    "title"   : "Maple Flag LICENSE",
-    "license" :
+    "page"    : "Maple Flag LICENSE",
+    "content" :
         {
         "intro" : "To play the \"Pay to Play\" missions you need to have both a License Key and a Mission Key: the former uniquely identifies your system and is used by us to create a valid Mission Key, that in turn unlocks a single mission or campaign package.",
         "list"  :
@@ -13,6 +13,6 @@ var license =
         }
     }
 
-// -----------------------------------------
+// // //
 
 module.exports = license

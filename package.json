@@ -1,7 +1,7 @@
 {
   "name": "maple",
-  "version": "0.7.0",
-  "description": "New design for the Maple Flag website",
+  "version": "1.0.0",
+  "description": "New design for the Maple Flag website.",
   "main": "maple.js",
   "dependencies": {
     "app-root-path": "^1.0.0",

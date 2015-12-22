@@ -1,14 +1,10 @@
 @import "common\gui"
 
-.faq_entry
+.faq
     margin : 0 10%
     padding: 12px 0
     &:not(:last-child)
-        border-bottom: 1px solid color_main-light
-    & p
-        line-height: 24px
-        font-size  : font_size-normal
-        text-align : justify
+        border-bottom: 1px solid color_main-medium
 
 .faq_question
     padding   : 12px 0
@@ -22,5 +18,5 @@
     max-height: 150px
     overflow  : hidden
     transition: max-height time_fast ease-in-out
-    &.faq_answer-closed
+    &.closed
         max-height: 0

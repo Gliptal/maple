@@ -1,7 +1,7 @@
 var help =
     {
-    "title" : "Maple Flag HELP",
-    "help"  :
+    "page"     : "Maple Flag HELP",
+    "content"  :
         {
         "intro" : "DCS can be very intimidating to new users. Many of the modules are considered \"study\" sims that require in depth knowledge and training to be able to make full use of them. Our Qualification Campaigns are a set of missions to test your knowledge and techniques to operate the various aircraft or vehicles. They should be attempted after you have some knowledge and understanding of the aircraft or vehicle systems.",
         "list"  :
@@ -15,6 +15,6 @@ var help =
         }
     }
 
-// -----------------------------------------
+// // //
 
 module.exports = help

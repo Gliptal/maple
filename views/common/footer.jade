@@ -1,4 +1,5 @@
-#footer
-  p#footer_content!= content
-  p#footer_meta-update.footer_meta!= update
-  p#footer_meta-credit.footer_meta!= credit
+footer
+  h6#footer_content!= footer.content
+  .footer_meta
+    h6!= footer.update
+    h6!= footer.credit

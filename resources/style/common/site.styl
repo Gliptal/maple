@@ -26,8 +26,8 @@ html
     box-sizing : border-box
 
 body
-    height     : calc(100% - 240px)
-    margin-top : 144px
+    height     : "calc(100% - %s)" % (header_height + footer_height)
+    margin-top : header_height
     font       : 0 "Open Sans", sans-serif
     font-weight: font_weight-light
     color      : font_color-light
@@ -35,14 +35,27 @@ body
     & #content
         min-height: 100%
 
+p
+    line-height: font_size-normal + 6px
+    font-size  : font_size-normal
+    text-align : justify
+    a
+        text-decoration: underline
+
+h1
+    font-size     : font_size-large
+    font-weight   : font_weight-heavy
+    text-transform: uppercase
+
+h6
+    line-height: font_size-small + 6px
+    font-size  : font_size-small
+
 a
-    color          : inherit
+    color          : font_color-light
     text-decoration: initial
     cursor         : pointer
     transition     : color time_fast
-
-p a
-    text-decoration: underline
     &:hover
         color: font_color-medium
 
@@ -59,7 +72,7 @@ press
     font-weight     : font_weight-medium
     text-align      : center
     text-transform  : uppercase
-    background-color: color_accent-dark
+    background-color: color_accent-normal
     cursor          : pointer
     transition      : background-color time_fast
     &:hover
@@ -69,57 +82,57 @@ press
         display: block
         height : 100%
         width  : 100%
+        &:hover
+            color: inherit
 
 row
     display: flex
     padding: 0 20%
     &:nth-child(even)
-        background-color: color_main-light
-    &.row_noimage p
-        width: 100%
-    &.row_numbering div
-        display        : flex
-        justify-content: center
-        align-items    : center
-        font-size      : font_size-image
-        font-weight    : font_weight-heavy
-    & p
+        background-color: color_main-medium
     & div
+    & p
         align-items: stretch
         transition : opacity time_normal
-    & p
-        width      : calc(100% - 252px)
-        line-height: 24px
-        padding    : 60px 0
-        font-size  : font_size-normal
-        text-align : justify
     & div
-        align-items: stretch
-        width      : 252px
+        width: row_image-width
+        &.numbering
+            display        : flex
+            justify-content: center
+            align-items    : center
+            font-size      : font_size-numbering
+            font-weight    : font_weight-heavy
+    & p
+        width  : "calc(100% - %s)" % row_image-width
+        padding: 60px 0
+        &.noimage
+            width: 100%
+
 
 group
-    display: block
-    &:last-child
-        padding-bottom: 72px
+    display : block
     & .group_title
-        height        : 84px
         width         : 100%
-        line-height   : 48px
-        margin-bottom : 24px
-        border-bottom : 1px solid color_main-light
-        padding-top   : 36px
         font-size     : font_size-normal
         font-weight   : font_weight-medium
         text-transform: uppercase
         text-align    : center
-        cursor        : pointer
+        & p
+            padding   : 60px 0
+            text-align: center
+            background: rgba(32, 32, 32, .8)
+            cursor    : pointer
+            transition: background time_fast
+            &:hover
+            &.hovered
+                background: rgba(32, 32, 32, .6)
     & .group_content
         display       : block
         margin        : 0 10%
         text-align    : center
         overflow      : hidden
         transition    : height time_normal ease-in-out
-        &.no-transition
+        &.notransition
             transition: none
 
 .hidden

@@ -1,20 +1,20 @@
 var express = require("express")
 var favicon = require("serve-favicon")
-var logger = require("morgan")
-var stylus = require("stylus")
-var config = require(rootDir + "bin/config")
+var logger  = require("morgan")
+var stylus  = require("stylus")
+var config  = require(rootDir + "bin/config")
 
-var home = require(rootDir + "routes/home")
+var home     = require(rootDir + "routes/home")
 var missions = require(rootDir + "routes/missions")
-var faq = require(rootDir + "routes/faq")
-var help = require(rootDir + "routes/help")
-var license = require(rootDir + "routes/license")
-var support = require(rootDir + "routes/support")
+var faq      = require(rootDir + "routes/faq")
+var help     = require(rootDir + "routes/help")
+var license  = require(rootDir + "routes/license")
+var support  = require(rootDir + "routes/support")
 var hardware = require(rootDir + "routes/hardware")
-var store = require(rootDir + "routes/store")
-var about = require(rootDir + "routes/about")
+var store    = require(rootDir + "routes/store")
+var about    = require(rootDir + "routes/about")
 
-// -----------------------------------------
+// // //
 
 var configurator =
     {
@@ -27,8 +27,8 @@ var configurator =
 
     configureEngines: function()
         {
+        this.site.locals.basedir = rootDir
         this.site.set("view engine", config.engines.view)
-        this.site.locals.basedir = rootDir;
         this.site.use(stylus.middleware(config.options.stylus))
         },
 
@@ -53,13 +53,13 @@ var configurator =
         }
     }
 
-// -----------------------------------------
+// // //
 
 configurator.configureLogger()
 configurator.configureEngines()
 configurator.configurePaths()
 configurator.configureRoutes()
 
-// -----------------------------------------
+// // //
 
 module.exports = configurator.site;
