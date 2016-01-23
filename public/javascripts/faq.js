@@ -12,4 +12,5 @@ Faq.prototype.__subscribeEntries = function()
   }
 
 new Header("faq", true)
+new Footer()
 new Faq()

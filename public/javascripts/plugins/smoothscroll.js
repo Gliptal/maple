@@ -1,6 +1,6 @@
 $(document).ready(function($)
   {
-  $("a:not(nav a)").click(function(event)
+  $("sidebar a").click(function(event)
     {
     event.preventDefault()
 
@@ -14,5 +14,9 @@ $(document).ready(function($)
     var time = Options.timeSlow - (factor*1000) / Math.abs(currentPosition - finalPosition)
 
     $("html, body").animate({scrollTop : finalPosition}, time)
+    setTimeout(function()
+      {
+      $("[id=\""+id+"\"] > .group_title").click()
+      }, time)
     })
   })

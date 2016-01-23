@@ -1,6 +1,6 @@
 {
   "name": "maple",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "description": "New design for the Maple Flag website.",
   "main": "maple.js",
   "dependencies": {
@@ -27,6 +27,6 @@
     "deliver": "node bin/deliver.js"
   },
   "author": "Mattia Affabris <affa@outlook.it> (https://github.com/Gliptal/)",
-  "license": "ISC",
+  "license": "CC BY-SA 4.0",
   "private": true
 }

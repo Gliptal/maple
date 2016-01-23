@@ -61,5 +61,6 @@ Missions.prototype.__highlightVisibleSidebar = function()
   }
 
 new Header("missions", true)
+new Footer()
 new Missions()
 new Groups()

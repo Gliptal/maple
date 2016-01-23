@@ -40,6 +40,7 @@ The following plugins are used clientside:
 
 - [jQuery](https://jquery.com/)
 - [viewport](http://www.appelsiini.net/projects/viewport)
+- [jQuery dateFormat](https://github.com/phstc/jquery-dateFormat)
 
 CONTACTS
 ======
@@ -48,6 +49,15 @@ CONTACTS
 - Frontend: [Mattia Affabris](https://github.com/Gliptal)
 - Content: [MapleFlagMissions.ca](mailto:mapleflagmissions@gmail.com)
 - Advisors: [Federico Baldessari](http://new.atletica.me/) - [Alessandro Pezzé](https://github.com/Naramsim)
+
+LICENSE
+======
+
+[![license](https://i.creativecommons.org/l/by-sa/4.0/80x15.png)](http://creativecommons.org/licenses/by-sa/4.0/)
+
+Maple Design by [Mattia Affabris](mailto:affa@outlook.it) is licensed under a [Creative Commons Attribution-ShareAlike 4.0 International License](http://creativecommons.org/licenses/by-sa/4.0/).
+
+Based on a work at [https://github.com/Gliptal/maple](https://github.com/Gliptal/maple).
 
 CHANGELOG
 ======
@@ -114,3 +124,14 @@ Versioning follows [semantic versioning](http://semver.org/) rules.
 - modified deliver.js script
 - modified missions
 - modified sidebar
+
+### 1.0.1
+
+- store page fix
+
+### 1.1.0
+
+- added license
+- integrated github API
+- modified design
+- paypal links fix

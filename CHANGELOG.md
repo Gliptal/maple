@@ -60,3 +60,14 @@ Versioning follows [Semantic versioning](http://semver.org/) rules.
 - modified deliver.js script
 - modified missions
 - modified sidebar
+
+### 1.0.1
+
+- store page fix
+
+### 1.1.0
+
+- added license
+- integrated github API
+- modified design
+- paypal links fix

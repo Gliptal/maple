@@ -36,5 +36,6 @@ Home.prototype.__loadVideo = function()
   }
 
 new Header("home", false)
+new Footer()
 new Home()
 new Rows()
